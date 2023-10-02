@@ -1,5 +1,38 @@
-body {
-    background-image:url("./images/pexels-photo-3642350.jpeg");
-    background-size: cover;
+* body {
+    background-color: rgba(255, 0, 0, 0.724)
 }
-    
+
+
+
+.marquee {
+    height: 25px;
+    width: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee div {
+    background-color: #606C38;
+    display: block;
+    width: 200%;
+    height: 30px;
+    margin-top: 5px;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee span {
+    float: left;
+    width: 50%;
+}
+
+@keyframes marquee {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
